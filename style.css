@@ -58,10 +58,11 @@ nav a {
     font-size: 28px;
     color: #DEDEDE;
     transition: 0.3s;
+    transform-origin: center;
 }
 
 nav a:hover {
-    opacity: 20%;
+    opacity: 30%;
 }
 
 /* home */
@@ -77,6 +78,17 @@ nav a:hover {
     font-weight: 700;
     font-size: 120px;
     margin-bottom: 52px;
+    z-index: 1;
+}
+
+#home img {
+    transition: 0.5s;
+    transform-origin: bottom;
+    z-index: -1;
+}
+
+#home img:hover {
+    transform: scale(1.1);
 }
 
 /* projects */
@@ -98,6 +110,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: 0.3s;
+    transform-origin: bottom;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .project h5 {
